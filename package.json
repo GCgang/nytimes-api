@@ -1,0 +1,18 @@
+{
+  "name": "nytimes-api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}
