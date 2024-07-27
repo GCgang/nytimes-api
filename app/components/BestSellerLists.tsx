@@ -1,5 +1,5 @@
 import Category from './Category';
-const API_URL = 'https://books-api.nomadcoders.workers.dev/lists';
+const API_URL = process.env.NEXT_PUBLIC_BEST_SELLER_LISTS_URL;
 
 async function getBestSellerLists() {
   const response = await fetch(API_URL);
