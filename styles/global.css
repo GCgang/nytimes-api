@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 html,
 body,
 div,
@@ -100,12 +102,25 @@ nav,
 section {
   display: block;
 }
+html,
 body {
-  line-height: 1;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #ffffff;
 }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
 ol,
 ul {
   list-style: none;
+  padding: 0;
 }
 blockquote,
 q {
@@ -121,4 +136,22 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  grid-row: 1;
+}
+
+main {
+  grid-row: 2;
+  padding: 20px;
+}
+
+footer {
+  grid-row: 3;
+  text-align: center;
 }
