@@ -7,7 +7,9 @@ export default function Header() {
       <nav>
         <ul className={styles.navigators}>
           <li className={styles.link}>
-            <Link href="/">Home</Link>
+            <Link prefetch href="/">
+              Home
+            </Link>
           </li>
           <li className={styles.link}>
             <Link href="/about">About</Link>
