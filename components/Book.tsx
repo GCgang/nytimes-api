@@ -1,3 +1,4 @@
+import styles from '../styles/Book.module.css';
 interface IBookProps {
   bookImage: string;
   title: string;
@@ -11,12 +12,12 @@ export default function Book({
   amazonLink,
 }: IBookProps) {
   return (
-    <div>
+    <div className={styles.book}>
       <li>
         <img src={bookImage} alt={title} />
         <h2>{title}</h2>
         <p>{author}</p>
-        <a href={amazonLink} target="_blank">
+        <a href={amazonLink} target="_blank" rel="noopener noreferrer">
           Buy on Amazon
         </a>
       </li>
