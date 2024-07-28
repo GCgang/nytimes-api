@@ -1,4 +1,4 @@
-import CategoryBooks from '../../../components/CategoryBooks';
+import CategoryBooks from '../../../../components/CategoryBooks';
 
 interface IParams {
   params: { category: string };

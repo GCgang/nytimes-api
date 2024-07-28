@@ -1,4 +1,4 @@
-import BestSellerLists from '../components/BestSellerLists';
+import BestSellerLists from '../../components/BestSellerLists';
 
 export const metadata = {
   title: 'Home',
