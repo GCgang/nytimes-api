@@ -1,5 +1,6 @@
 'use client';
 
+import styles from '../styles/Category.module.css';
 import { useRouter } from 'next/navigation';
 
 interface ICategoryProps {
@@ -13,8 +14,8 @@ export default function Category({ name }: ICategoryProps) {
   };
 
   return (
-    <div onClick={handleClick}>
-      <li>{name}</li>
+    <div className={styles.category} onClick={handleClick}>
+      <li>{name} →</li>
     </div>
   );
 }
