@@ -1,3 +1,4 @@
+import styles from '../styles/CategoryBooks.module.css';
 import Book from './Book';
 
 interface ICategoryBooksProps {
@@ -15,7 +16,7 @@ export default async function CategoryBooks({ category }: ICategoryBooksProps) {
   const books = await getBooksByCategory(category);
 
   return (
-    <ul>
+    <ul className={styles.categoryBooks}>
       {books.map((book) => (
         <Book
           key={book.primary_isbn13}
@@ -24,6 +25,7 @@ export default async function CategoryBooks({ category }: ICategoryBooksProps) {
           author={book.author}
           amazonLink={book.amazon_product_url}
         />
+        
       ))}
     </ul>
   );
