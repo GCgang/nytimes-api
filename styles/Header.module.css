@@ -1,0 +1,26 @@
+.header {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+.link:hover {
+  background-color: #e0e0e0;
+}

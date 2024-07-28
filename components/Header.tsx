@@ -1,15 +1,16 @@
+import styles from '../styles/Header.module.css';
 import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header>
+    <header className={styles.header}>
       <nav>
-        <ul>
-          <li>
-            <Link href={'/'}>Home</Link>
+        <ul className={styles.navigators}>
+          <li className={styles.link}>
+            <Link href="/">Home</Link>
           </li>
-          <li>
-            <Link href={'/about'}>About</Link>
+          <li className={styles.link}>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </nav>
