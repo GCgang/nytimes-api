@@ -1,3 +1,4 @@
+import styles from '../../styles/Home.module.css';
 import BestSellerLists from '../../components/BestSellerLists';
 
 export const metadata = {
@@ -7,7 +8,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      <h1>THE NEW YORK TIMES BEST SELLER EXPLORER</h1>
+      <h1 className={styles.title}>THE NEW YORK TIMES BEST SELLER EXPLORER</h1>
       <BestSellerLists />
     </div>
   );
