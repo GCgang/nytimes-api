@@ -1,3 +1,4 @@
+import styles from '../../../../styles/BookLists.module.css';
 import CategoryBooks from '../../../../components/CategoryBooks';
 
 interface IParams {
@@ -11,7 +12,7 @@ export const metadata = {
 export default async function BookLists({ params: { category } }: IParams) {
   return (
     <div>
-      <h1>{decodeURIComponent(category)}</h1>
+      <h1 className={styles.title}>{decodeURIComponent(category)}</h1>
       <CategoryBooks category={category} />
     </div>
   );
